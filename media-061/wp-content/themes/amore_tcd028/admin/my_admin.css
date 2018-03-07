@@ -1,0 +1,112 @@
+/* レイアウト */
+#my_theme_option { background:#3b4960; margin:20px 0; -moz-border-radius:7px; -khtml-border-radius:7px; -webkit-border-radius:7px; border-radius:7px; -webkit-background-clip:padding-box; -moz-background-clip:padding; background-clip:padding-box; border:1px solid #ccc; }
+#my_theme_left { float:left; width:20%; }
+#my_theme_right { width:80%; min-height:500px; float:right; background:#fff; -moz-border-radius:0 7px 7px 0; -khtml-border-radius:0 7px 7px 0; -webkit-border-radius:0 7px 7px 0; border-radius:0 7px 7px 0; border-left:1px solid #ccc; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box; }
+#tab-panel { padding:39px 30px 20px; }
+
+
+
+/* 左メニュー */
+#theme_tab { margin:0 -1px 0 0; border-bottom:1px solid #6a7992; }
+#theme_tab li { margin:0; }
+#theme_tab li a { display:block; text-decoration:none; padding:11px 15px; border-bottom:1px solid #000; border-top:1px solid #6a7992; color:#fff; font-size:100%; }
+#theme_tab li:first-child a { border-top:none; -moz-border-radius:7px 0 0 0; -khtml-border-radius:7px 0 0 0; -webkit-border-radius:7px 0 0 0; border-radius:7px 0 0 0; }
+#theme_tab li.current a, #theme_tab li.current a:hover { background:#fff; position:relative; color:#333; }
+#theme_tab li.current a:after { content: ''; width:7px; height:13px; position:absolute; top:22px; right:0px; background:url(../img/arrow_left.gif) no-repeat left top; }
+#theme_tab li a:hover { background:#617089; }
+#theme_tab li a:focus { outline:0; }
+
+
+
+/* 項目 */
+.theme_option_field { margin:0 0 20px 0; background:#fff; border:1px solid #ccc; box-shadow:0px 0px 0px 3px #fff inset; padding:20px;overflow:hidden; }
+.theme_option_field2 { padding:1px 15px 25px; }
+.theme_option_headline {
+  font-size:16px; line-height:160%; border-bottom:1px solid #ccc; margin:-20px -20px 18px; padding:10px 20px;
+  box-shadow:0px 0px 0px 1px #fff inset, 0 0 0 3px #fff;
+  background:#f2f2f2; background:
+  -webkit-linear-gradient(top, #ffffff, #eeeeee);
+  background: -moz-linear-gradient(top, #ffffff, #eeeeee);
+  background: -ms-linear-gradient(top, #ffffff, #eeeeee);
+  background: -o-linear-gradient(top, #ffffff, #eeeeee);
+  background: linear-gradient(to bottom, #ffffff, #eeeeee);
+  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#ffffff', EndColorStr='#eeeeee');
+}
+.theme_option_headline2 { font-weight:bold; font-size:15px; padding:0 0 12px 0; border-bottom:1px solid #ccc; margin:30px 0 10px 0; }
+.theme_option_headline2:before { content:''; display:block; float:left; width:5px; height:20px; background:#7a879e; margin:0px 8px 0 0; -moz-border-radius:1px; -khtml-border-radius:1px; -webkit-border-radius:1px; border-radius:1px; }
+.theme_option_headline3 { font-weight:bold; font-size:13px; padding:0; margin:0 0 10px 0; }
+.theme_option_field input[type="file"] { cursor:pointer; border:1px solid #ccc; background:#fff; padding:5px 5px; -moz-border-radius:3px; -khtml-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; float:left; margin:0 10px 0 0; }
+
+
+
+/* ボタン */
+.button-ml {
+  cursor:pointer; color:#fff; font-size:14px; padding:0px 30px; height:35px; line-height:35px; margin:20px 0 0 0; display:block; text-decoration:none;
+  background:#0073aa; border:1px solid #005177;
+  -moz-border-radius:3px; -khtml-border-radius:3px; -webkit-border-radius:3px; border-radius:3px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-ml:hover
+ { background:#13cae0; border:1px solid #3ea5b1; color:#fff; }
+.button-ml:active
+ { box-shadow:none; bottom:-2px; position:relative; }
+a.button-ml { display:inline-block; margin:0; }
+
+
+
+/* ロゴ関連 */
+.theme_option_field .button_area { padding:20px 0; }
+.theme_option_field .button_area label { display:block; font-weight:bold; }
+.theme_option_field .button_area .button-ml { margin:0; }
+.uploaded_logo { padding:10px 20px; margin:0 0 20px 0; text-align:center; background:#fff; border:1px solid #ccc; -moz-border-radius:6px; -khtml-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; }
+.uploaded_logo h4 { font-size:14px; }
+.uploaded_logo .uploaded_logo_image { margin:0 0 15px 0; }
+.uploaded_logo .uploaded_logo_image img { border:1px solid #ccc; background: url(img/img_bg.gif); }
+.theme_option_field .hide { display:none; }
+.uploaded_logo #resize_button_area { margin:0 0 10px 0; }
+#original_logo_size img { background: url(img/img_bg.gif); }
+.uploaded_logo #dp_logo_to_resize { cursor:crosshair; }
+.resize_amount { margin:0 0 15px 0; font-size:14px; }
+.resize_amount input { width:40px; }
+.resize_amount label { margin:0 10px; }
+
+
+
+/* ロゴの位置調整 */
+#tcd-w-logo-adjuster{ max-width:1080px; height:100px; background:url(img/header.jpg) no-repeat left top; border:1px solid #aaa; position:relative; overflow:hidden; margin:0 0 20px 0; }
+#tcd-w-logo-adjuster img { position:absolute; left:0; top:0; cursor:move; border:1px solid #00e0dd; }
+#tcd-w-logo-adjuster img.ui-draggable-dragging { opacity: 0.6; -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.7); -moz-box-shadow: 0 0 5px rgba(0,0,0,0.7); box-shadow: 0 0 5px rgba(0,0,0,0.7); border:none; }
+#tcd-w-logo-adjuster span{ color:#f00; font-size:16px; }
+
+
+
+/* 広告バナーの登録 */
+.banner_wrapper .banner_headline { background:#f2f2f2; margin:0 0 10px 0; padding:12px 10px 8px; -moz-border-radius:6px 6px 0 0; -khtml-border-radius:6px 6px 0 0; -webkit-border-radius:6px 6px 0 0; border-radius:6px 6px 0 0;
+background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); background: -moz-linear-gradient(top, #fff, #eee);
+border-bottom:1px solid #ccc; }
+.banner_wrapper { border:1px solid #ccc; -moz-border-radius:6px; -khtml-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; margin:20px 0px; }
+.image_box { margin:0 0 15px 0; }
+.upload_banner_button_area { margin:0 0 15px 0; }
+.image_box img { display:block; max-width:150px; height:auto; margin:0 0 15px 0; }
+
+
+
+.cf:after { content: "."; display: block; clear: both; height: 0; font-size:0.1em; line-height:0; visibility: hidden; }
+.cf { display: inline-block; }
+/* exlude MacIE5 \*/
+* html .cf { height: 1% }
+.cf {display:block;}
+/* end MacIE5 */
+
+
+
+/* その他  */
+.hankaku { ime-mode:disabled; }
+.font_size { width: 45px; margin-right: 10px;}
+.theme_option_input h5{
+  font-size: 1em;
+  margin: 1.5em 0 0.5em;
+}
+.theme_option_input ul{
+  margin-top: 0; 
+}
